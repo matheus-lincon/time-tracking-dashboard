@@ -1,0 +1,25 @@
+.container {
+  margin: 2rem;
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 80px;
+}
+
+/* MEDIA QUERIES - RESPONSIVE */
+
+@media only screen and (min-width: 960px) {
+  .container {
+    margin: 5rem;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas:
+      'profile card1 card2 card3'
+      'profile card4 card5 card6';
+  }
+}

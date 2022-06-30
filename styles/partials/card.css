@@ -1,0 +1,114 @@
+.card {
+  width: 100%;
+
+  position: relative;
+}
+
+.card .icon-title {
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+.card header {
+  overflow: hidden;
+
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: -2.8rem;
+
+  height: 4rem;
+
+  border-radius: 1rem 1rem 0 0;
+}
+
+@media only screen and (min-width: 960px) {
+  .card .icon-title {
+    width: 30%;
+    top: -10px;
+  }
+
+  .card header {
+    top: -1.9rem;
+  }
+}
+
+.card .card-content {
+  border-radius: 1rem;
+  padding: 2rem;
+
+  background-color: var(--dark-blue);
+}
+
+.card .card-content .card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .card-content .card-title p {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.card .card-content .card-title .dot-icon {
+  cursor: pointer;
+}
+
+/* MAIN INFO */
+
+.card .card-content .main-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 960px) {
+  .card .card-content .main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.card .card-content .main-info .hours {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.card .card-content .main-info p:last-child {
+  color: var(--pale-blue);
+}
+
+/* cards */
+#card-work header {
+  background-color: var(--light-orange);
+}
+
+@media only screen and (min-width: 960px) {
+  #card-work header {
+    grid-area: card2;
+  }
+}
+
+#card-play header {
+  background-color: var(--soft-blue);
+}
+
+#card-study header {
+  background-color: var(--light-red);
+}
+
+#card-exercise header {
+  background-color: var(--lime-green);
+}
+
+#card-social header {
+  background-color: var(--violet);
+}
+
+#card-selfcare header {
+  background-color: var(--soft-orange);
+}
