@@ -21,7 +21,7 @@ reports.forEach((report) => {
 /* --- */
 
 function fillDashBoard(status) {
-  fetch('../data.json')
+  fetch('./data.json')
     .then((response) => {
       return response.json()
     })
